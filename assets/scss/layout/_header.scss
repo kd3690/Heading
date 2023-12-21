@@ -37,3 +37,117 @@
         }
     }
 }
+.heading-2{
+    h1{
+        margin: 0;
+        text-transform: uppercase;
+        font-family: system-ui;
+        font-weight: 500;
+        text-align: center;
+        &:after{
+            background-color: #ff4500;
+            content: "";
+            display: block;
+            height: 5px;
+            left: 41%;
+            margin-top: 6px;
+            position: absolute;
+            width: 19%;
+        }
+    }
+}
+
+.heading-3{
+    text-align: center;
+    h1{
+        margin: 0;
+        color: green;
+        letter-spacing: 1px;
+        position: relative;
+        
+        &::after{
+            
+            content: "";
+            display: block;
+            height: 4px;
+            width: 57px;
+            right: 46%;
+            bottom: -42px;
+            position: absolute;
+            background-color: grey;
+        }
+       
+        &::before{
+            content: "";
+            display: block;
+            background-color:#086375;
+            bottom: 14px;
+            height: 4px;
+            width: 58px;
+            left: 46%;
+            bottom: -42px;
+            position: absolute;
+            
+        }
+    }
+    span{
+        font-family: inherit;
+        font-weight: 500;
+        font-size: 25px;
+        font-style: italic;  
+    }
+}
+
+.heading-4{
+    text-align: center;
+    h1{
+        margin: 0;
+        font-size: 25px;
+        font-family: unset;
+        position: relative;
+        &::before{
+            content: "";
+            display: block;
+            height: 3px;
+            width: 86px;
+            position: absolute;
+            left: 43%;
+            background-color: darkblue;
+            margin-top: -6px;
+        }
+        &::after{
+            background-color: #00008b;
+            content: "";
+            display: block;
+            height: 3px;
+            width: 86px;
+            right: 43%;
+            position: absolute;
+        }
+    }
+}
+
+.heading-5{
+    text-align: center;
+    h1{
+        margin: 0;
+        font-size: 30px;
+        font-family: inherit;
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        grid-template-rows: 16px 0;
+        grid-gap: 15px;
+        &::before{
+            content: "";
+            display: block;
+            border-bottom: 2px solid orangered;
+            margin-left: 76%;
+        }
+        &::after{
+            content: "";
+            display: block;
+            border-bottom: 2px solid orangered;
+            margin-right: 76%;
+        }
+    }
+}
