@@ -1,0 +1,115 @@
+.radio-button-1{
+ margin: 50px 0;
+  .form-group{
+    margin-left: 25px;
+
+    input[type="radio"]:checked,
+    input[type="radio"]:not(:checked){
+     position: absolute;
+     display: none;
+    }
+    input[type="radio"]:checked+label,
+    input[type="radio"]:not(:checked)+label{
+      cursor: pointer;
+      position: relative;
+      padding-left: 28px;
+      line-height: 20px;
+      display: inline-block;
+      color: dimgrey;
+      
+      &::before{
+       background: white;
+       border: 1px solid black;
+       border-radius: 50%;
+       content: "";
+       display: block;
+       height: 20px;
+       position: absolute;
+       top: 0;
+       width: 20px;
+       left: 0;
+      }
+      &::after{
+       content: "";
+       display: block;
+       background: purple;
+       width: 14px;
+       height: 14px;
+       top: 3px;
+       position: absolute;
+       left: 3px;
+       border-radius: 50%;
+       transition: all 0.2s ease;
+      }
+    }
+    input[type="radio"]:checked+label:after{
+     opacity: 1;
+     transform: scale(1);
+    }
+    input[type="radio"]:not(:checked)+label:after{
+     opacity: 0;
+     transform: scale(0);
+    }
+  }
+}
+
+.radio-button-2{
+ margin: 50px;
+
+ label{
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  margin: 15px 20px;
+ }
+ input[type="radio"]{
+  opacity: 0;
+ }
+ .design{
+    width: 8px;
+    height: 8px;
+    outline: 3px solid darkslategrey;
+    border-radius: 50%;
+    outline-offset: 3px;
+    margin-right: 20px;
+ }
+ input[type="radio"]:checked~.design{
+  outline-color: darkslategray;
+  background: darkslategray;
+ }
+ input[type="radio"]:checked~.value{
+  color: lightslategrey;
+ }
+}
+
+.radio-button-3{
+ margin: 50px 0;
+ label{
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  text-transform: capitalize;
+  padding-left: 50px;
+
+  input[type="radio"]{
+   display: none;
+  }
+  .design{
+   width: 10px;
+   height: 10px;
+   outline: 2px solid grey;
+   outline-offset: 3px;
+   border-radius: 50%;
+   margin-right: 14px;
+   transition: all 0.5s ease;
+  }
+  input[type="radio"]:checked~.design{
+   background: black;
+   outline-color: crimson;
+  }
+  input[type="radio"]:checked~.value{
+   color: grey;
+  }
+ }
+}

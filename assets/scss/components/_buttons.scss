@@ -1,0 +1,42 @@
+// Button hover effect - 1
+.button-1{
+margin-top: 50px;
+.btn-1{
+ background-color:white;
+ width: fit-content;
+ padding: 9px 20px;
+ margin: 20px;
+ font-size: 16px;
+ cursor:pointer;
+ text-decoration: none;
+ border: 1px solid black;
+ color: black;
+ transition: all 0.5s ease;
+  
+  &:hover{
+    color:white;
+   background-color: black;
+  }
+}
+}
+
+// Button hover effect - 2
+
+button {
+ background: none;
+ border: 2px solid;
+ font: inherit;
+ line-height: 1;
+ margin: 0.5em;
+ padding: 1em 2em;
+ transition: 0.25s;
+ color: crimson;
+ transition: 0.25s;
+ 
+ &:hover,
+ &:focus { 
+   border-color:black;
+   color: crimson;
+ }
+}
+
